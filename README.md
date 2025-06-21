@@ -11,11 +11,25 @@ This repository provides a pipeline to classify toxic text using a pre-trained R
 
 ## Requirements
 
-- Python 3.7+
-- Transformers library (`pip install transformers`)
-- PyTorch
-- scikit-learn
-- pandas
+### 1. System setup (Ubuntu/Debian-based)
+
+```bash
+sudo apt update
+sudo apt install -y python3.12-venv
+python3.12 -m venv ~/myenv
+source ~/myenv/bin/activate
+```
+
+### 2. Python dependencies
+
+```bash
+pip install transformers[torch]
+pip install pandas scikit-learn
+```
+Python 3.7+ is required. Make sure your environment is activated each time you use the scripts:
+```
+source ~/myenv/bin/activate
+```
 
 ## How to Use
 
